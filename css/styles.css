@@ -178,21 +178,16 @@ background-color:rgba(204, 80, 133, 0.8) ;
 .content-link:active{
 opacity: 0.6;
 }
-.content-item-meta {
+.content-meta {
     display: flex;
-    align-self:center;
+    align-items: center;
     color: #888;
     font-size: 14px;
     line-height: normal;
 }
-.content-uploaded-time {
-    display: flex;
-    align-items: center;
-    margin-right: 24px;
-}
 .content-meta-item{
     display: flex;
-    align-items: center;
+    align-items:center;
 }
 .content-meta-item:not(:last-child){
     margin-right: 24px; 
