@@ -3,64 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Articles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
- <div class="blog">
-   <div class="blog-wrapper">
-       <img class="background-photo" src="img/background.jpg" alt="photo" srcset="img/background.jpg 1x, img/background@2x.jpg" width="1024" height="1024">
-        <span class="blog-text">Follow for more interesting blogs about cosmetics</span>
-   </div>
-  
-   <button class="top-blogs-button" type="button">
-    <span class="star-icon"></span>
-    <span class="button-text">TOP BLOGS</span>
-  </button>
- </div>
+ <main class="main-content">
+    <!-- <h1>site about cosmetics</h1> -->
+    <div class="global-wrapper">
+    
+    
+    <!-- Hero -->
+      <div class="hero">
+      <div class="hero-content">
+           <h1 class="hero-heading">Follow for more interesting blogs about cosmetics</h1>
+           <a class="hero-button-link">
+             <span class="hero-icon-inner">   
+             <span class="hero-link-star">TOP BLOGS</span>
+             </span>
+           </a>
+      </div>
+      </div>
 
- <div class="container">
-  <h2 class="container-heading">Latest videos</h2>
-   <div class="contents">
-    <ul class="content-list">
+      <!-- Latest videos -->
+      <!-- <div class="container"> -->
+  <section class="content-videos">
+    <h2 class="content-heading">Latest videos</h2>
+    <hr class="content-videos-divider" >
+     <ul class="content-list">
+        <!-- item -->
       <li class="content-item">
-       <img class="content-img" src="img/morning skin-care.jpg" alt="photo" width="350" height="350">
-       <h3 class="content-item-heading">Morning skincare routine</h3>
-       <div class="content-footer">
-         <span class="content-uploaded-time-icon icon"></span>
-         <span class="content-uploaded-time">1 week ago</span>
-         <span class="content-watched-icon icon"></span>
-         <span class="content-watched">873k</span>
-       </div>
-      </li>
-      
-      <li class="content-item">
-        <img class="content-img" src="img/face-cream.jpg" alt="photo" width="350" height="350">
-        <h3 class="content-item-heading">Face-cream benefits</h3>
-        <div class="content-footer">
-          <span class="content-uploaded-time-icon icon"></span>
-          <span class="content-uploaded-time">3 weeks ago</span>
-          <span class="content-watched-icon icon"></span>
-          <span class="content-watched">913k</span>
-        </div>
+         <div class="item-content">
+       <img class="content-img" src="img/morning-skin-care.jpg" alt="photo" width="160" height="90">
+               <div class="content-info">
+                 <h3 class="content-item-heading">
+                   <a class="content-link" href="#">Morning skincare routine
+                   </a>
+                  </h3>
+                  
+                  <div class="content-meta">
+                    <time class="content-meta-item content-uploaded-time" datetime="2024-01-06">1 week ago</time>
+                    <div class="content-meta-item content-views">873k</div>
+                  </div>
+                </div>
+             </div>
+           </li>
+    
+    
+       <li class="content-item">
+          <div class="item-content">
+            <img class="content-img" src="img/face-cream.jpg" alt="photo" width="160" height="90">
+            <div class="content-info">
+              <h3 class="content-item-heading">
+                <a class="content-link" href="#">Face-cream benefits</a>
+             </h3>
+                  <div class="content-item-meta">
+                    <time class="content-meta-item content-uploaded-time" datetime="2024-08-26">3 weeks ago</time>
+                    <div class="content-meta-item content-views">913k</div>
+                  </div>
+            </div>
+            </div>
+          </li>
+    
+        <li class="content-item">
+            <div class="item-content">
+              <img class="content-img" src="img/trashcos.jpg" alt="photo" width="160" height="90">
+              <div class="content-info">
+                <h3 class="content-item-heading">
+                <a class="content-link" href="#">Trash cosmetics which shouldn't be used</a>
+                </h3>
+                          
+                <div class="content-item-meta">
+                  <time class="content-meta-item content-uploaded-time" datetime="2024-12-05">3 months ago</time>
+                  <div class="content-meta-item content-views">7.3m</div>
+                </div>
+              </div>
+           </div>
+          </li>
+         </ul>
+         <!-- button -->
+        <button class="download-button" type="button">Download more</button>
+  </section>
 
-      </li>
-      <img class="content-img" src="img/trashcos.jpg" alt="photo" width="350" height="350">
-       <h3 class="content-item-heading">Trash cosmetics which shouldn't be used</h3>
-       <div class="content-footer">
-         <span class="content-uploaded-time-icon icon"></span>
-         <span class="content-uploaded-time">1 month ago</span>
-         <span class="content-watched-icon icon"></span>
-         <span class="content-watched">7.3m</span>
-       </div>
-      <li class="content-item">
-
-      </li>
-    </ul>
-   </div>
- </div>
 
 
+      </div>
+ </main>
+
+ <script src="js/main.js"></script>
 </body>
 </html>
